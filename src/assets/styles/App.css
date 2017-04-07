@@ -1,0 +1,41 @@
+
+.App {
+
+  margin: auto;
+  width: 1300px; 
+}
+
+
+.Main {
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+
+}
+
+#AppHeader {
+
+  
+}
+
+#AppHeader h1 {
+
+  text-align: center;
+  font-size: 30px;
+  font-family: "Papyrus";
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
