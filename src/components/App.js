@@ -1,11 +1,12 @@
 
 import React, { Component } from 'react';
-import store from '../store'
-import { getData } from '../api/bcbc'
+// import store from '../store'
+// import { getData } from '../api/bcbc'
 import '../assets/styles/App.css';
 import Menu from './Menu'
+import reservationForm from './ResMap'
 
-getData()
+// getData()
 
 // Open Sans Font
 // Papyrus for Headers
@@ -25,7 +26,7 @@ class App extends Component {
 
         <div className='Main'>
 
-          
+          <reservationForm />
           <Menu />
           
           
@@ -33,7 +34,7 @@ class App extends Component {
         </div>
 
       </div>
-    );
+    )
   }
 }
 
