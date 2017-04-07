@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+h1 {
+  text-align: center;
+  padding:2%;
+  font-size: 60px;
+  font-family: "Papyrus";
+}
+.background {
+  opacity: 0.9;
+  width:900px;
+  height:550px;
+}
+#paragraphs {
+  margin-top: -43%;
+  margin-left: 20%;
+  background-color: rgba(0,0,0,0.5);
+  border:1px solid white;
+  padding:5%;
+  height:544px;
+  width:550px;
+  font-size: 15px;
+  font-family: 'open-sans',sans-serif;;
+  color:white;
+  position:absolute;
+  overflow: auto;
+}
+.aboutPage {
+	margin-top: 8%;
+}
+.story {
+	margin-top: -10%;
+	position:absolute;
+	font-family: "Papyrus";
+	font-size:60px;
+}
+.JD {
+  position:absolute;
+	margin-left:-68%;
+  margin-top: 0.5%;
+}
+.Gunter {
+	position:absolute;
+	margin-top: -27%;
+  margin-left: 4%;
+  color:white;
+  font-size:25px;
+}

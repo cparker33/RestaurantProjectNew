@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 // import store from '../store'
 // import { getData } from '../api/bcbc'
 import '../assets/styles/App.css';
+import AboutUs from './AboutUs'
 import Menu from './Menu'
 import reservationForm from './ResMap'
+
 
 // getData()
 
@@ -25,12 +27,16 @@ class App extends Component {
       </div>
 
         <div className='Main'>
+          
+         
 
           <reservationForm />
           <Menu />
           
-          
 
+          
+         
+        
         </div>
 
       </div>
@@ -39,3 +45,4 @@ class App extends Component {
 }
 
 export default App;
+
