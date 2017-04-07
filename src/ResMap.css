@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.mainFormDiv {
+	background-image:url(http://i.imgur.com/aRJrRxV.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	overflow:auto;
+	height: 700px;
+	width: 900px;
+	font-family: 'open-sans',sans-serif;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.container {
+	background-color:rgba(0,0,0,0.4);
+}
+
+h1 {
+	font-family: 'papyrus';
+	width: 450px;
+	margin:auto;
+	margin-top:30px;
+	text-align: center;
+	color:white;
+}
+
+form {
+	margin:auto;
+	width:400px;
+	padding:30px;
+}
+
+label {
+	display:block;
+	color:white;
+}
+
+input, textarea, select{
+	width:350px;
+	outline:none;
+}
+
+textarea {
+	border-color: lightgray;
+	height: 100px;
+	resize: none;
+}
+
+select {
+	
+}
+
+.formInput {
+	margin:15px;
+}
+
+button {
+	margin: 15px;
+	padding:10px;
+}
+
+/* Map styling*/
+
+.map {
+	margin:auto;
+
+}
+
