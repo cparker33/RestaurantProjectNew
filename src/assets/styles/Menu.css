@@ -1,0 +1,66 @@
+
+#MenuOpen {
+  border: 1px solid #000;
+  width: 900px;
+  height: 550px;
+  position: relative;
+}
+
+#MenuClosed {
+  border: 1px solid #000;
+  width: 100px;
+  height: 550px;
+  overflow: hidden;
+}
+
+
+#MenuBg {
+
+  width: 900px;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+}
+
+#MenuBgImg {
+
+  width: 940px;
+  height: 1150px;
+  margin-top: -300px;
+  margin-left: -30px;
+}
+
+#MenuBgImgCvr {
+
+  width: 902px;
+  height: 550px;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  background-color: #3D3012;
+}
+
+
+#MenuCont {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 550px;
+  overflow: auto;
+
+}
+
+
+#MenuInnerCont {
+
+  margin-top: 10px;
+  margin-left: 20px; 
+} 
+
+#MenuCont p, h1 {
+
+  color: white;
+
+}
