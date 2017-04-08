@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react';
 import '../assets/styles/ResMap.css'
 
-class reservationForm extends React.Component {
+class reservationForm extends Component {
   
   render() {
     return (
