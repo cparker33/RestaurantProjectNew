@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
-// import store from '../store'
-// import { getData } from '../api/bcbc'
+import store from '../store'
+import { getData } from '../api/bcbc'
 import '../assets/styles/App.css';
 import AboutUs from './AboutUs'
 import Menu from './Menu'
@@ -9,6 +9,9 @@ import reservationForm from './ResMap'
 
 
 // getData()
+
+
+getData()
 
 // Open Sans Font
 // Papyrus for Headers
