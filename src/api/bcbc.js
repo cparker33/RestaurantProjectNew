@@ -5,8 +5,8 @@ export function getData() {
 
 axios.get('https://json-data.herokuapp.com/restaurant/menu/1').then(function (data) {
 
-  console.log('from api ', data)
-  console.log('from api.result ', data.data)
+  // console.log('from api ', data)
+  // console.log('from api.data ', data.data)
 
   store.dispatch({
 
