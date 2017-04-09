@@ -1,8 +1,9 @@
 
 const InitState = {
 
-  cData: {} 
-
+  cData: {},
+  dSpecial: {}
+  
 }
 
 
@@ -18,7 +19,15 @@ export function cReduc (state = InitState, action) {
 
       cData: [...state.cData, action.action]
 
-    }
+    },
+  
+  case 'GET_SPECIAL':
+
+  	return {
+
+      dSpecial: [...state.dSpecial, action.special]
+
+  	}
 
   default:
 
