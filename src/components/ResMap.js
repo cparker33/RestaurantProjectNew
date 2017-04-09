@@ -44,7 +44,7 @@ class ResMap extends Component {
   onClick={this.handleClick} 
   id={this.state.theClass === 'Closed' ? 'ResMapOutterClosed' : 'ResMapOutterOpen'}>
 
-<div id="ResMapInnerClosed">
+<div 
   id={this.state.theClass === 'Closed' ? 'ResMapInnerClosed' : 'ResMapInnerOpen'}>
 
    
@@ -54,23 +54,23 @@ class ResMap extends Component {
           fghgfd
          	<form>
   	       	<div className="formInput">	
-  	       		<label for="name">Full Name</label>
+  	       		<label htmlFor="name">Full Name</label>
   						<input id="name" type="text" />
   					</div>
   					<div className="formInput">
-  						<label for="guests">Number of Guests</label>
+  						<label htmlFor="guests">Number of Guests</label>
   						<input id="guests" type="number" />
   					</div>
   					<div className="formInput">
-  						<label for="date">Date</label>
+  						<label htmlFor="date">Date</label>
   						<input id="date" type="text" />
   					</div>
   					<div className="formInput">
-  						<label for="note">Special Note</label>
+  						<label htmlFor="note">Special Note</label>
   						<textarea id="note" type="" />
   					</div>
   					<div className="formInput">
-  						<label for="seating">Seating Preferance</label>
+  						<label htmlFor="seating">Seating Preferance</label>
   						<select id="seating">
                 <option value="Booth">Booth</option>
                 <option value="Table">Table</option>
@@ -95,4 +95,5 @@ class ResMap extends Component {
     )
   }
 }
+
 export default ResMap

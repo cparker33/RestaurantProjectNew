@@ -1,14 +1,52 @@
 import React, { Component } from 'react';
 import '../assets/styles/AboutUs.css';
+import store from '../store'
+import { componentClick } from '../api/bcbc'
 
 class AboutUs extends Component {
+
+  constructor() {
+
+    super()
+    
+    this.state = {
+
+      theClass: 'Closed',
+     
+    }
+
+  }
+
+  componentWillMount() {
+
+    store.subscribe(() => {
+
+      const appSt = store.getState()
+
+      this.setState({
+
+        theClass: appSt.aboutusClass,       
+
+      })
+    })
+  }
+
+  handleClick() {
+
+    componentClick('About')
+
+  }
   render() {
     return (
 
 
 
-<div id="AboutUsOutterClosed">
-<div id="AboutUsInnerClosed">
+<div
+  onClick={this.handleClick} 
+  id={this.state.theClass === 'Closed' ? 'AboutUsOutterClosed' : 'AboutUsOutterOpen'}>
+
+<div 
+  id={this.state.theClass === 'Closed' ? 'AboutUsInnerClosed' : 'AboutUsInnerOpen'}>
 
 
       <div

@@ -7,7 +7,7 @@
 
 
 #MenuInnerOpen {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 #MenuOutterOpen {
@@ -42,7 +42,9 @@
   overflow: hidden;
 }
 
-
+#MenuBg:hover {
+  cursor: pointer;  
+}
 #MenuBg {
 
   width: 900px;
@@ -51,12 +53,19 @@
   overflow: hidden;
 }
 
+#MenuBgImg:hover {
+  cursor: pointer;  
+}
 #MenuBgImg {
 
   width: 940px;
   height: 1150px;
   margin-top: -300px;
   margin-left: -30px;
+}
+
+#MenuBgImgCvr:hover {
+  cursor: pointer;  
 }
 
 #MenuBgImgCvr {
@@ -69,27 +78,29 @@
   background-color: #3D3012;
 }
 
+#MenuCont:hover {
+  cursor: pointer;  
+}
 
 #MenuCont {
 
   position: absolute;
-  top: 60px;
+  top: 5px;
   left: 0px;
   width: 900px;
   height: 540px;
   overflow: auto;
 
 }
-
+#MenuInnerCont:hover {
+  cursor: pointer;  
+}
 
 #MenuInnerCont {
 
   margin-top: 10px;
   margin-left: 20px; 
 } 
-
-
-
 
 
 .MenuTitlePriceCont {

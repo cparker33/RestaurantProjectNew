@@ -2,19 +2,26 @@
 
 
 
-#ResMapOutterOpen{
+
+#ResMapOutterClosed:hover {
+	cursor: pointer;	
+}
+
+#ResMapOutterOpen {
 	
 	background-image:url(http://i.imgur.com/aRJrRxV.jpg);
 	border: 1px solid #000;
   width: 900px;
   height: 550px;
   position: relative;
+  overflow: auto;
   transition: width 2s;
 }
 
-#ResMapInnerOpen{
+#ResMapInnerOpen {
 
 	opacity: 1;
+	transition: opacity 2s;
 }
 
 #ResMapOutterClosed {
@@ -29,8 +36,9 @@
 
 }
 
-#ResMapInnerClosed{
+#ResMapInnerClosed {
 	opacity: 0;
+	transition: opacity 2s;
 
 }
 
@@ -38,7 +46,7 @@
 	
 	background-position: center;
 	background-attachment: fixed;
-	background-color: red;
+	
 	overflow:auto;
 	height: 700px;
 	width: 900px;
@@ -101,7 +109,10 @@ button {
 /* Map styling*/
 
 .map {
-	margin:auto;
+	margin: auto;
+}
 
+iframe {
+	margin-left: 220px;
 }
 

@@ -3,16 +3,19 @@
 
 
 #AboutUsOutterOpen{
-  opacity: 1;
-}
-
-#AboutUsInnerOpen{
-
+  
   background-image:url(https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w);
   border: 1px solid #000;
   width: 900px;
   height: 550px;
   position: relative;
+  transition: width 2s;
+}
+
+#AboutUsInnerOpen{
+
+  opacity: 1;
+  transition: opacity 2s;
 
 }
 
@@ -24,11 +27,13 @@
   height: 550px;
   position: relative;
   overflow: hidden;
+  transition: width 2s;
 
 }
 
 #AboutUsInnerClosed{
   opacity: 0;
+  transition: opacity 2s;
 
 }
 
@@ -63,10 +68,7 @@
   position: absolute;
   opacity: 0;
 }
-.AboutUsContClosed{
-  border:1px solid red;
-  
-}
+
 h1 {
   text-align: center;
   padding:2%;

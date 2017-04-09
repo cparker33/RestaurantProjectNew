@@ -6,6 +6,8 @@ import '../assets/styles/App.css';
 import Menu from './Menu'
 import AboutUs from './AboutUs'
 import ResMap from './ResMap'
+import Specials from './DailySpecials'
+
 
 
 // getData()
