@@ -1,13 +1,14 @@
 
 const InitState = {
 
+
   cData: [],
   menuClass: 'Closed',
   resmapClass: 'Closed', 
   aboutusClass: 'Closed', 
   specialClass: 'Open', 
   foodClass: 'Closed', 
-
+  dSpecial: {},
 }
 
 
@@ -30,6 +31,16 @@ export function cReduc (state = InitState, action) {
       
 
     }
+    
+    break
+  
+  case 'GET_SPECIAL':
+
+  	return {
+
+      dSpecial: [...state.dSpecial, action.special]
+
+  	}
 
     break
 
@@ -111,31 +122,4 @@ export function cReduc (state = InitState, action) {
   }
 
 }
-
-
-/*
-,
-  menuClassState: 'Closed', 
-  aboutusClassState: 'Closed', 
-  resmapClassState: 'Closed' 
-
-
-break
-
-  case 'COMPONENT_CLICK':
-
-
-      if (action === 'menu') {
-
-        return {
-
-          menuClassState: 'Open', 
-          aboutusClassState: 'Closed', 
-          resmapClassState: 'Closed' 
-        }
-      
-      }
-
-
-*/
 
