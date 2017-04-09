@@ -3,10 +3,7 @@ import axios from 'axios'
 
 export function getData() {
 
-axios.get('https://json-data.herokuapp.com/restaurant/menu/1').then(function (data) {
-
-  // console.log('from api ', data)
-  // console.log('from api.data ', data.data)
+  axios.get('https://json-data.herokuapp.com/restaurant/menu/1').then(function (data) {
 
   store.dispatch({
 
@@ -18,8 +15,23 @@ axios.get('https://json-data.herokuapp.com/restaurant/menu/1').then(function (da
   })
 
 }
- 
 
+
+
+export function componentClick(comp) {
+
+  console.log('FROM API COMP CLICK')
+
+  store.dispatch({
+
+      type: 'COMPONENT_CLICK',
+      action: comp
+      
+    })  
+
+
+}
+ 
 
 
 

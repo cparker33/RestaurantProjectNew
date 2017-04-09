@@ -6,11 +6,33 @@
 
 
 
-#MenuOpen {
+#MenuInnerOpen {
+  opacity: 0.3;
+}
+
+#MenuOutterOpen {
+
   border: 1px solid #000;
   width: 900px;
   height: 550px;
   position: relative;
+  transition: width 2s;
+}
+
+
+#MenuInnerClosed {
+  opacity: 0;
+
+}
+
+#MenuOutterClosed {
+
+  border: 1px solid #000;
+  width: 100px;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  transition: width 2s;
 }
 
 #MenuClosed {

@@ -5,8 +5,28 @@ class AboutUs extends Component {
   render() {
     return (
 
-      <div id="AboutUs">
-             <img className="background" alt="x" src="https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w"/>
+
+
+<div id="AboutUsOutterClosed">
+<div id="AboutUsInnerClosed">
+
+
+      <div
+        className='AboutUsContClosed'>
+
+      <img 
+        className="background" 
+        alt="x" 
+        src="https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w"/>
+             
+      <div  
+        className="AboutUsClosed">
+
+        <img className="background" 
+        alt="x" 
+        src="https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w"/>
+          
+             
              <div className="blog">Stay updated on our daily specials! Follow us on:</div>
           
             <div id="paragraphs">
@@ -21,6 +41,11 @@ class AboutUs extends Component {
           </div>
           
       </div>
+      </div>
+
+</div> 
+</div> 
+      
     );
   }
 }

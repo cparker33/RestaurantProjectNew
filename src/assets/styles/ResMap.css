@@ -1,9 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-.mainFormDiv {
+
+
+#ResMapOutterOpen{
+	
 	background-image:url(http://i.imgur.com/aRJrRxV.jpg);
+	border: 1px solid #000;
+  width: 900px;
+  height: 550px;
+  position: relative;
+  transition: width 2s;
+}
+
+#ResMapInnerOpen{
+
+	opacity: 1;
+}
+
+#ResMapOutterClosed {
+
+	background-image:url(http://i.imgur.com/aRJrRxV.jpg);
+	border: 1px solid #000;
+  width: 100px;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  transition: width 2s;
+
+}
+
+#ResMapInnerClosed{
+	opacity: 0;
+
+}
+
+.mainFormDiv {
+	
 	background-position: center;
 	background-attachment: fixed;
+	background-color: red;
 	overflow:auto;
 	height: 700px;
 	width: 900px;
@@ -61,6 +96,7 @@ button {
 	margin: 15px;
 	padding:10px;
 }
+
 
 /* Map styling*/
 

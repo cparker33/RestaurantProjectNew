@@ -5,7 +5,7 @@ import { getData } from '../api/bcbc'
 import '../assets/styles/App.css';
 import Menu from './Menu'
 import AboutUs from './AboutUs'
-// import reservationForm from './ResMap'
+import ResMap from './ResMap'
 
 
 // getData()
@@ -28,8 +28,10 @@ class App extends Component {
 
         <div className='Main'>
           
-         
+         <Menu /> 
+         <ResMap />
          <AboutUs />
+         
          
         
         </div>
