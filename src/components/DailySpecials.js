@@ -8,7 +8,7 @@ class Specials extends React.Component {
     super()
     this.state = {
       special: [],
-      theClass: 'Closed',
+      theClass: 'Open',
     }
   }
 
@@ -17,10 +17,10 @@ class Specials extends React.Component {
     store.subscribe(()=>{
       const appState = store.getState() 
 
-      // console.log('mount' , appState.dSpecial[0])
+      console.log('mount' , appState)
 
       this.setState({
-        special: appState.dSpecial[0],
+        //special: appState.dSpecial[0],
         theClass: appState.specialClass, 
       })
 
@@ -59,7 +59,7 @@ class Specials extends React.Component {
           </div>
         </div>
 
-        </div> 
+</div> 
 </div> 
     )
   }

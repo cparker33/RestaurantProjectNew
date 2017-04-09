@@ -1,5 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+
+
+#DailyOutterClosed:hover {
+  cursor: pointer;  
+}
+
+#DailyOutterOpen {
+  
+  background-image:url(https://c1.staticflickr.com/6/5767/23448903936_5969567415_b.jpg);
+  border: 1px solid #000;
+  width: 900px;
+  height: 550px;
+  position: relative;
+  overflow: auto;
+  transition: width 2s;
+}
+
+#DailyInnerOpen {
+
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+#DailyOutterClosed {
+
+  background-image:url(https://c1.staticflickr.com/6/5767/23448903936_5969567415_b.jpg);
+  border: 1px solid #000;
+  width: 100px;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  transition: width 2s;
+
+}
+
+#DailyInnerClosed {
+  opacity: 0;
+  transition: opacity 2s;
+
+}
+
 .mainSpecialsDiv {
 	width: 900px;
   height: 700px;

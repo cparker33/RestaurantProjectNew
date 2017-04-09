@@ -6,6 +6,7 @@ const InitState = {
   resmapClass: 'Closed', 
   aboutusClass: 'Closed', 
   specialClass: 'Open', 
+  foodClass: 'Closed', 
 
 }
 
@@ -25,6 +26,7 @@ export function cReduc (state = InitState, action) {
       resmapClass: state.resmapClass,
       specialClass: state.specialClass,
       aboutusClass: state.aboutusClass,
+      foodClass: 'Open',
       
 
     }
@@ -41,6 +43,7 @@ export function cReduc (state = InitState, action) {
           resmapClass: 'Closed',
           specialClass: 'Closed',
           aboutusClass: 'Closed', 
+          foodClass: 'Closed',
 
         }
 
@@ -51,7 +54,8 @@ export function cReduc (state = InitState, action) {
           menuClass: 'Closed',
           resmapClass: 'Open',
           specialClass: 'Closed',
-          aboutusClass: 'Closed', 
+          aboutusClass: 'Closed',
+          foodClass: 'Closed', 
 
         }
 
@@ -62,7 +66,8 @@ export function cReduc (state = InitState, action) {
           menuClass: 'Closed',
           resmapClass: 'Closed',
           specialClass: 'Open',
-          aboutusClass: 'Closed', 
+          aboutusClass: 'Closed',
+          foodClass: 'Closed', 
 
         }
 
@@ -73,7 +78,20 @@ export function cReduc (state = InitState, action) {
           menuClass: 'Closed',
           resmapClass: 'Closed',
           specialClass: 'Closed',
-          aboutusClass: 'Open', 
+          aboutusClass: 'Open',
+          foodClass: 'Closed', 
+
+        }
+
+      } else if (action.action === 'Food') {
+
+        return {
+          cData: state.cData,
+          menuClass: 'Closed',
+          resmapClass: 'Closed',
+          specialClass: 'Closed',
+          aboutusClass: 'Closed',
+          foodClass: 'OPen', 
 
         }
 

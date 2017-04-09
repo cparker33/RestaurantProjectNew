@@ -7,6 +7,9 @@ import Menu from './Menu'
 import AboutUs from './AboutUs'
 import ResMap from './ResMap'
 import Specials from './DailySpecials'
+import OurFood from './OurFood'
+
+
 
 
 
@@ -32,7 +35,9 @@ class App extends Component {
           
          <Menu /> 
          <ResMap />
+         <Specials />
          <AboutUs />
+         <OurFood />
          
          
         
