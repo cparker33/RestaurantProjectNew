@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { getData } from '../api/bcbc'
 import '../assets/styles/App.css';
 import AboutUs from './AboutUs'
+import OurFood from './OurFood'
 import Menu from './Menu'
 import reservationForm from './ResMap'
 
@@ -22,20 +23,12 @@ class App extends Component {
 
       <div className="App">
 
-      <div id='AppHeader'>
-        <h1>Brown Chicken Brown Cow</h1>
-      </div>
-
         <div className='Main'>
-          
-         
-
           <reservationForm />
           <Menu />
-          
-
-          
-         
+          <AboutUs />
+          <OurFood />
+        
         
         </div>
 
