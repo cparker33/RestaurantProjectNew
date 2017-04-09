@@ -1,13 +1,57 @@
 import React, { Component } from 'react';
 import '../assets/styles/ResMap.css'
+import store from '../store'
+import { componentClick } from '../api/bcbc'
 
-class reservationForm extends Component {
+class ResMap extends Component {
+
+  constructor() {
+
+    super()
+    
+    this.state = {
+
+      theClass: 'Closed',
+     
+    }
+
+  }
+
+  componentWillMount() {
+
+    store.subscribe(() => {
+
+      const appSt = store.getState()
+
+      this.setState({
+
+        theClass: appSt.resmapClass,       
+
+      })
+    })
+  }
+
+  handleClick() {
+
+    componentClick('ResMap')
+
+  }
   
   render() {
     return (
+
+<div
+  onClick={this.handleClick} 
+  id={this.state.theClass === 'Closed' ? 'ResMapOutterClosed' : 'ResMapOutterOpen'}>
+
+<div 
+  id={this.state.theClass === 'Closed' ? 'ResMapInnerClosed' : 'ResMapInnerOpen'}>
+
+   
       <div className="mainFormDiv">
         <div className="container">
           <h1>Reservation Form</h1>
+          fghgfd
          	<form>
   	       	<div className="formInput">	
   	       		<label htmlFor="name">Full Name</label>
@@ -45,7 +89,11 @@ class reservationForm extends Component {
           </div>
         </div>
       </div>
+</div> 
+</div> 
+
     )
   }
 }
-export default reservationForm
+
+export default ResMap

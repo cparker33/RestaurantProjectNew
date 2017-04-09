@@ -1,12 +1,14 @@
 import React from 'react'
 import '../assets/styles/DailySpecials.css'
 import store from '../store'
+import { componentClick } from '../api/bcbc'
 
 class Specials extends React.Component {
   constructor() {
     super()
     this.state = {
-      special: []
+      special: [],
+      theClass: 'Open',
     }
   }
 
@@ -15,19 +17,35 @@ class Specials extends React.Component {
     store.subscribe(()=>{
       const appState = store.getState() 
 
-      console.log('mount' , appState.dSpecial[0])
+      console.log('mount' , appState)
 
       this.setState({
-        special: appState.dSpecial[0]
+        //special: appState.dSpecial[0],
+        theClass: appState.specialClass, 
       })
 
     })
   }
 
+  handleClick() {
+
+    componentClick('Special')
+
+  }
+  
+
   render() {
 
-  console.log('render', this.state.special)    
+  // console.log('render', this.state.special)    
     return (
+
+<div
+  onClick={this.handleClick} 
+  id={this.state.theClass === 'Closed' ? 'DailyOutterClosed' : 'DailyOutterOpen'}>
+
+<div 
+  id={this.state.theClass === 'Closed' ? 'DailyInnerClosed' : 'DailyInnerOpen'}>
+ 
         <div className="mainSpecialsDiv">
           <div className="dsContainer">
             <h1 className="dsH1">Daily Specials</h1>
@@ -40,6 +58,9 @@ class Specials extends React.Component {
             </div>
           </div>
         </div>
+
+</div> 
+</div> 
     )
   }
 }

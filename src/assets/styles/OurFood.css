@@ -1,4 +1,48 @@
 /*@import url('googlefontsurl')*/
+
+
+#FoodOutterClosed:hover {
+  cursor: pointer;  
+}
+
+#FoodOutterOpen {
+  
+  background-image:url(http://1.design-milk.com/images/2014/12/Art-of-Plating-9-Noriyuki-Hamada-.jpg);
+  border: 1px solid #000;
+  width: 900px;
+  height: 550px;
+  position: relative;
+  overflow: auto;
+  transition: width 2s;
+}
+
+#FoodInnerOpen {
+
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+#FoodOutterClosed {
+
+  background-image:url(http://1.design-milk.com/images/2014/12/Art-of-Plating-9-Noriyuki-Hamada-.jpg);
+  border: 1px solid #000;
+  width: 100px;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  transition: width 2s;
+
+}
+
+#FoodInnerClosed {
+  opacity: 0;
+  transition: opacity 2s;
+
+}
+
+
+
+
 #PhotoGallery {
   background-image: url("http://1.design-milk.com/images/2014/12/Art-of-Plating-9-Noriyuki-Hamada-.jpg");
   width: 900px;

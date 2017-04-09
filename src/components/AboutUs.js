@@ -1,12 +1,70 @@
 import React, { Component } from 'react';
 import '../assets/styles/AboutUs.css';
+import store from '../store'
+import { componentClick } from '../api/bcbc'
 
 class AboutUs extends Component {
+
+  constructor() {
+
+    super()
+    
+    this.state = {
+
+      theClass: 'Closed',
+     
+    }
+
+  }
+
+  componentWillMount() {
+
+    store.subscribe(() => {
+
+      const appSt = store.getState()
+
+      this.setState({
+
+        theClass: appSt.aboutusClass,       
+
+      })
+    })
+  }
+
+  handleClick() {
+
+    componentClick('About')
+
+  }
   render() {
     return (
 
-      <div id="AboutUs">
-             <img className="background" alt="x" src="https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w"/>
+
+
+<div
+  onClick={this.handleClick} 
+  id={this.state.theClass === 'Closed' ? 'AboutUsOutterClosed' : 'AboutUsOutterOpen'}>
+
+<div 
+  id={this.state.theClass === 'Closed' ? 'AboutUsInnerClosed' : 'AboutUsInnerOpen'}>
+
+
+      <div
+        className='AboutUsContClosed'>
+
+      <img 
+        className="background" 
+        alt="x" 
+        src="https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w"/>
+             
+      <div  
+        className="AboutUsClosed">
+
+        <img className="background" 
+        alt="x" 
+        src="https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w"/>
+          
+             
              <div className="blog">Stay updated on our daily specials! Follow us on:</div>
           
             <div id="paragraphs">
@@ -21,6 +79,11 @@ class AboutUs extends Component {
           </div>
           
       </div>
+      </div>
+
+</div> 
+</div> 
+      
     );
   }
 }

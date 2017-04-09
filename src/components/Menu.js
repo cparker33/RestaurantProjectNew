@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import store from '../store'
 import { getData } from '../api/bcbc'
+import { componentClick } from '../api/bcbc'
 import '../assets/styles/Menu.css';
 
 
 getData()
 
-// https://unsplash.com/collections/312299/restaurant-cafe?photo=mcjvw2570iA
-// https://unsplash.com/collections/312299/restaurant-cafe
+// componentClick('Menu')
+
 
 class Menu extends Component {
 
@@ -17,8 +18,7 @@ class Menu extends Component {
     
     this.state = {
 
-      theClass: 'thatDiv',
-      menuItems: [],
+      theClass: 'Closed',
       appItems: [],
       entItems: [],
       sidItems: [],
@@ -95,40 +95,51 @@ class Menu extends Component {
 
       const appSt = store.getState()
 
-      // console.log('Mount ', appSt.cData[0])  
+      console.log('Mount ', appSt.menuClass)  
 
       this.setState({
 
-        menuItems: appSt.cData[0],
+        
         appItems: appSt.cData[0].appetizers,
         entItems: appSt.cData[0].entrees,
-        sidItems: appSt.cData[0].sides
+        sidItems: appSt.cData[0].sides,
+        theClass: appSt.menuClass,
+       
 
       })
     })
   }
 
+  handleClick() {
+
+    componentClick('Menu')
+
+  }
 
 
   render() {
 
-    console.log('Render Items ', this.state.menuItems)
-    console.log('Render Apps ', this.state.appItems)
-
+    console.log('Render Class ', this.state.theClass)
    
 
 
     
     return (
 
-      <div id="MenuOpen">
+    <div 
+      onClick={this.handleClick}
+      id={this.state.theClass === 'Closed' ? 'MenuOutterClosed' : 'MenuOutterOpen'}>
       
           <div id='MenuBg'>
             <img id='MenuBgImg' alt=' ' src='https://unsplash.it/1024/1450?image=292' />
             <div id='MenuBgImgCvr'></div>
           </div>
 
+    <div 
+      id={this.state.theClass === 'Closed' ? 'MenuInnerClosed' : 'MenuInnerOpen'}>
+
           <div id='MenuCont'>
+
             <div id='MenuInnerCont'>
 
               <h1>Menu</h1>
@@ -321,8 +332,11 @@ class Menu extends Component {
             </div>
 
           </div>
-          
-      </div>
+  
+
+  </div>
+
+</div>
     );
   }
 }
