@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.mainSpecialsDiv {
+	width: 900px;
+  height: 700px;
+  font-family: 'open-sans',sans-serif;
+	background-image: url(https://c1.staticflickr.com/6/5767/23448903936_5969567415_b.jpg);
+
+
+  background-attachment: fixed;
+	color:white;
+  overflow: auto;
+
+}
+
+.dsContainer {
+  background-color: rgba(0,0,0,0.4);
+  padding:20px;
+  height: 100%;
+  width: 900px;
+}
+
+.dsH1 {
+	font-family: 'papyrus';
+}
+
+.dsInfo {
+  width: 300px;
+  text-align: center;
+}
+
+.dsImage {
+  width:200px;
+}
