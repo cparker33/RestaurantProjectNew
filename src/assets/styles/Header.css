@@ -1,0 +1,30 @@
+.App {
+
+  margin: auto;
+  width: 1300px; 
+}
+#AppHeader h1 {
+  
+  text-align: center;
+  font-size: 50px;
+  font-family: "Papyrus";
+}
+#chicken, #cow {
+  height:60px;
+  margin-left:30%;
+  position:relative;
+}
+#links {
+  color:blue;
+  margin-top: -3%;
+  height:50px;
+  width:50px;
+}
+.media img {
+  margin:10px;
+}
+.media {
+  margin-left: 39%;
+  margin-top: -3%;
+  cursor:pointer;
+}
