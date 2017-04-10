@@ -45,7 +45,7 @@ class OurFood extends Component {
   onClick={this.handleClick} 
   id={this.state.theClass === 'Closed' ? 'FoodOutterClosed' : 'FoodOutterOpen'}>
 
-
+<div id='cFoodCover'></div>
 
 <div
     id={this.state.theClass === 'Closed' ? 'FoodTitleClosed' : 'FoodTitleOpen'}>

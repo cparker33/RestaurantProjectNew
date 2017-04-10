@@ -61,10 +61,7 @@ class AboutUs extends Component {
       <div
         className='AboutUsContClosed'>
 
-        <img className="background" 
-        alt="x" 
-        src="https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w"/>
-    
+       
           
             <div id="paragraphs">
             	<p className="story">Our Story</p>

@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
-
-
 #DailyClosedText {
 /*Leave me here*/
 }
@@ -36,12 +34,13 @@
 /*------------------------------*/
 
 
+
 #cMenuCover {
   width: 900px;
   height: 550px;
   position: absolute;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.3;
 
 }
 
@@ -88,11 +87,9 @@
 }
 
 .mainSpecialsDiv {
-  
 	width: 900px;
   height: 550px;
   font-family: 'open-sans',sans-serif;
-	
   background-attachment: fixed;
 	color:white;
   overflow: hidden;
