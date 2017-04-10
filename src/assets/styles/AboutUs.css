@@ -40,7 +40,6 @@
 
 #AboutUsOutterOpen{
   
-  background-image:url(https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w);
   border: 1px solid #000;
   width: 900px;
   height: 550px;
@@ -49,14 +48,12 @@
 }
 
 #AboutUsInnerOpen{
-
   opacity: 1;
   transition: opacity 2s;
 
 }
 
 #AboutUsOutterClosed {
-
   background-image:url(https://static1.squarespace.com/static/5491eb4de4b0d067555899f5/t/549c42d9e4b045dc15455508/1419526880579/Kosher+_+Supper+_+Kitchensurfing-187.jpg?format=1500w);
   border: 1px solid #000;
   width: 100px;
@@ -79,18 +76,6 @@
   height:150px;
   width:250px;
   float:right;
-  margin-top: 0.8%;
-  margin-right: 5%;
-}
-.blog {
-  height:300px;
-  width:253px;
-  margin-top:20%;
-  margin-left: 67%;
-  text-align: center;
-  font-size:18px;
-  font-family: 'open-sans',sans-serif;
-  font-weight: bolder;
 }
 #AboutUs {
   position:absolute;
@@ -115,7 +100,7 @@ h1 {
   position:absolute;
   left:5%;
   top:1%;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
   border:1px solid white;
   padding:5%;
   height:547px;

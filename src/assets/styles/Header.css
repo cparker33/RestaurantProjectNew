@@ -22,6 +22,7 @@
 }
 .media img {
   margin:10px;
+  border-radius:50px;
 }
 .media {
   margin-left: 39%;
