@@ -135,6 +135,12 @@ class Menu extends Component {
             <div id='MenuBgImgCvr'></div>
           </div>
 
+          <div
+          id={this.state.theClass === 'Closed' ? 'MenuTitleClosed' : 'MenuTitleOpen'}>
+          <h1
+            id='MenuClosedText'>Menu</h1>
+          </div>
+
     <div 
       id={this.state.theClass === 'Closed' ? 'MenuInnerClosed' : 'MenuInnerOpen'}>
 

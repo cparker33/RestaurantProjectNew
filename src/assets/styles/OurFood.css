@@ -1,6 +1,34 @@
 /*@import url('googlefontsurl')*/
 
 
+
+
+#FoodClosedText {
+/*Leave me here*/
+}
+
+#FoodTitleClosed {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #fff;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#FoodTitleOpen {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/*------------------------------*/
+
+
 #FoodOutterClosed:hover {
   cursor: pointer;  
 }

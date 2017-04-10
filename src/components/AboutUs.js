@@ -45,6 +45,15 @@ class AboutUs extends Component {
   onClick={this.handleClick} 
   id={this.state.theClass === 'Closed' ? 'AboutUsOutterClosed' : 'AboutUsOutterOpen'}>
 
+
+<div
+    id={this.state.theClass === 'Closed' ? 'AboutTitleClosed' : 'AboutTitleOpen'}>
+  
+    <h1
+      id='AboutClosedText'>About Us</h1>
+  </div>
+
+
 <div 
   id={this.state.theClass === 'Closed' ? 'AboutUsInnerClosed' : 'AboutUsInnerOpen'}>
 

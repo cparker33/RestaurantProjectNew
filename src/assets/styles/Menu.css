@@ -6,8 +6,43 @@
 
 
 
+
+
+#MenuClosedText {
+/*Leave me here*/
+}
+
+#MenuTitleClosed {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#MenuTitleOpen {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/*------------------------------*/
+
 #MenuInnerOpen {
   opacity: 1;
+  transition: opacity 1s;
 }
 
 #MenuOutterOpen {
@@ -16,12 +51,13 @@
   width: 900px;
   height: 550px;
   position: relative;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 
 #MenuInnerClosed {
   opacity: 0;
+  transition: opacity 1s;
 
 }
 
@@ -32,7 +68,7 @@
   height: 550px;
   position: relative;
   overflow: hidden;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 #MenuClosed {
@@ -154,6 +190,8 @@
 .MenuSubSect {
 
   border: 1px solid #FFF;
+  width: 855px;
+
   margin-top: 20px;
   margin-bottom: 20px;
 }

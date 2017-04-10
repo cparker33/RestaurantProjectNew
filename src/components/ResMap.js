@@ -44,6 +44,14 @@ class ResMap extends Component {
   onClick={this.handleClick} 
   id={this.state.theClass === 'Closed' ? 'ResMapOutterClosed' : 'ResMapOutterOpen'}>
 
+  <div
+    id={this.state.theClass === 'Closed' ? 'ResMapTitleClosed' : 'ResMapTitleOpen'}>
+  
+    <h1
+      id='ResMapClosedText'>Reservations</h1>
+  </div>
+
+
 <div 
   id={this.state.theClass === 'Closed' ? 'ResMapInnerClosed' : 'ResMapInnerOpen'}>
 
