@@ -3,6 +3,41 @@
 
 
 
+#ResMapClosedText {
+/*Leave me here*/
+}
+
+#ResMapTitleClosed {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#ResMapTitleOpen {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/*------------------------------*/
+
+
+
+
 #ResMapOutterClosed:hover {
 	cursor: pointer;	
 }
@@ -15,13 +50,14 @@
   height: 550px;
   position: relative;
   overflow: auto;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 #ResMapInnerOpen {
 
 	opacity: 1;
-	transition: opacity 2s;
+
+	transition: opacity 1s;
 }
 
 #ResMapOutterClosed {
@@ -32,21 +68,21 @@
   height: 550px;
   position: relative;
   overflow: hidden;
-  transition: width 2s;
+  transition: width 1s;
 
 }
 
 #ResMapInnerClosed {
 	opacity: 0;
-	transition: opacity 2s;
+	transition: opacity 1s;
 
 }
 
 .mainFormDiv {
-	
+	position: absolute;
+  top: 0px;
 	background-position: center;
 	background-attachment: fixed;
-	
 	overflow:auto;
 	height: 700px;
 	width: 900px;

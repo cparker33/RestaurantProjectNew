@@ -1,6 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
+#DailyClosedText {
+/*Leave me here*/
+}
+
+#DailyTitleClosed {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#DailyTitleOpen {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/*------------------------------*/
+
+
+
+#cMenuCover {
+  width: 900px;
+  height: 550px;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.3;
+
+}
 
 #DailyOutterClosed:hover {
   cursor: pointer;  
@@ -14,13 +56,14 @@
   height: 550px;
   position: relative;
   overflow: auto;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 #DailyInnerOpen {
 
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 1s;
+  overflow: hidden;
 }
 
 #DailyOutterClosed {
@@ -31,26 +74,25 @@
   height: 550px;
   position: relative;
   overflow: hidden;
-  transition: width 2s;
+  transition: width 1s;
 
 }
 
 #DailyInnerClosed {
+  
   opacity: 0;
-  transition: opacity 2s;
-
+  transition: opacity 1s;
+  margin-top: -160px;
+  overflow: hidden;
 }
 
 .mainSpecialsDiv {
 	width: 900px;
-  height: 700px;
+  height: 550px;
   font-family: 'open-sans',sans-serif;
-	background-image: url(https://c1.staticflickr.com/6/5767/23448903936_5969567415_b.jpg);
-
-
   background-attachment: fixed;
 	color:white;
-  overflow: auto;
+  overflow: hidden;
 
 }
 
@@ -63,13 +105,16 @@
 
 .dsH1 {
 	font-family: 'papyrus';
+  border: 1px solid white;
 }
 
 .dsInfo {
   width: 300px;
   text-align: center;
+  border: 1px solid white;
 }
 
 .dsImage {
   width:200px;
+  border: 1px solid white;
 }

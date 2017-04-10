@@ -20,7 +20,6 @@ class Specials extends React.Component {
       console.log('mount' , appState)
 
       this.setState({
-        //special: appState.dSpecial[0],
         theClass: appState.specialClass, 
       })
 
@@ -42,6 +41,16 @@ class Specials extends React.Component {
 <div
   onClick={this.handleClick} 
   id={this.state.theClass === 'Closed' ? 'DailyOutterClosed' : 'DailyOutterOpen'}>
+
+<div id='cMenuCover'></div>
+
+<div
+    id={this.state.theClass === 'Closed' ? 'DailyTitleClosed' : 'DailyTitleOpen'}>
+  
+    <h1
+      id='DailyClosedText'>Daily Special</h1>
+  </div>
+
 
 <div 
   id={this.state.theClass === 'Closed' ? 'DailyInnerClosed' : 'DailyInnerOpen'}>

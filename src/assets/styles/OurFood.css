@@ -1,6 +1,31 @@
 /*@import url('googlefontsurl')*/
 
 
+#FoodClosedText {
+/*Leave me here*/
+}
+
+#FoodTitleClosed {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  line-height: 20px;
+  top: 250px;
+  left: -185px;
+  transform: rotate(-90deg);
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#FoodTitleOpen {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/*------------------------------*/
+
+
 #FoodOutterClosed:hover {
   cursor: pointer;  
 }
@@ -13,13 +38,13 @@
   height: 550px;
   position: relative;
   overflow: auto;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 #FoodInnerOpen {
 
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
 #FoodOutterClosed {
@@ -30,18 +55,28 @@
   height: 550px;
   position: relative;
   overflow: hidden;
-  transition: width 2s;
+  transition: width 1s;
 
 }
 
 #FoodInnerClosed {
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 1s;
+  overflow: hidden;
 
 }
 
 
 
+#cFoodCover {
+
+  width: 900px;
+  height: 550px;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.3;
+
+}
 
 #PhotoGallery {
   background-image: url("http://1.design-milk.com/images/2014/12/Art-of-Plating-9-Noriyuki-Hamada-.jpg");

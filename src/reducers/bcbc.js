@@ -27,7 +27,7 @@ export function cReduc (state = InitState, action) {
       resmapClass: state.resmapClass,
       specialClass: state.specialClass,
       aboutusClass: state.aboutusClass,
-      foodClass: 'Open',
+      foodClass: state.foodClass,
       
 
     }
